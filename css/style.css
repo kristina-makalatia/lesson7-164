@@ -1,0 +1,167 @@
+/* main classes */
+.container {
+    width: 1220px;
+    margin:0 auto;
+}
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header styles */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul {
+    display: flex;
+}
+.navigation-parent {
+    display: flex;
+    background-color: lightsalmon;
+    align-items: center;
+}
+.button-wraper {
+    width: 184px;
+    height: 65px;
+    background-color: #6B77E5;
+    color:#fff;
+}
+.header-fixed {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 50;
+    background-color: #fff;
+}
+body {
+    padding-top: 65px;
+}
+
+/* section#1 styles */
+.block-parent {
+    background-color: #F4F4F4;
+    width: 386px;
+    height: 383px;
+}
+.block-child {
+    background-color: lightblue;
+    width: 300px;
+    flex-direction: column;
+    text-align: center;
+}
+.icon {
+    width: 72px;
+    height: 72px;
+    background-color: #40DDB6;
+    border-radius: 50%;
+}
+
+/* section#2 styles */
+.image-banner {
+    width: 100%;
+}
+.text-block-image {
+    width: 511px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: lightcoral;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.image-relative-banner {
+    position: relative;
+}
+.blue-icon {
+    width: 64.5px;
+    height: 64.5px;
+    background-color: #6B77E5;
+    color:#fff;
+    border-radius: 50%;
+    /* position: absolute;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+/* section#3 styles */
+.block-image1 {
+    width:386px;
+    height: 532px;
+    position: relative;
+}
+.image-content-white-box {
+    width: 341px;
+    height: 114px;
+    background-color: #fff;
+    position: absolute;
+    left: 22px;
+    bottom: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* section#4 */
+.wraper-block {
+    width: 400px;
+    height: 400px;
+    background-color: lightblue;
+    position: relative;
+    /* transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 2s; */
+    transition: all 0.5s linear 2s;
+}
+.wraper-child-block {
+    width:150px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    transition: all 0.7s;
+}
+
+/* hover effect */
+.wraper-block:hover {
+    background-color: yellow;
+}
+.wraper-child-block:hover {
+    background-color: green;
+    transform:translate(-50%,-50%) rotate(0deg);
+}
+/* .wraper-block:hover .wraper-child-block {
+    background-color: pink;
+} */
+
+/* image car */
+.image-car {
+    height: 100px;
+    position: absolute;
+
+    animation: carmoveanimation 7s infinite ease-in;
+    /* animation-name: carmove;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in; */
+}
+.image-car-wraper {
+    position: relative;
+}
+
+
+/* keyframe */
+@keyframes carmoveanimation {
+    from {left:0px}
+    to {left:800px}
+}
